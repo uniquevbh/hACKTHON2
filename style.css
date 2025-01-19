@@ -1,0 +1,905 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, a, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffa500;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e69500;
+}
+
+#features {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+#editor {
+    padding: 50px 20px;
+    background-color: #eef2f3;
+}
+
+.editor-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#editor-area {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.editor-tools {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.editor-tools button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.editor-tools button:hover {
+    background-color: #ffa500;
+    transform: scale(1.05);
+}
+
+.editor-tools button:active {
+    background-color: #e69500;
+    transform: scale(0.98);
+}
+
+.editor-tools button::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bold::before {
+    background-image: url(./icons/bold.png);
+}
+
+#italic::before {
+    background-image: url(./icons/italic.png);
+}
+
+#underline::before {
+    background-image: url(./icons/underline-icon.png);
+}
+
+#h1::before {
+    background-image: url(./icons/heading.png);
+}
+
+#addBulletPoint::before {
+    background-image: url(./icons/bullet.png);
+}
+
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #005f73; /* Deep teal */
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ffd166; /* Soft yellow on hover */
+}
+
+/* Hero section */
+#hero {
+    background-color: #ffd166; /* Soft yellow */
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #005f73; /* Deep teal */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #003e44; /* Darker teal */
+}
+
+/* Features section */
+#features {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: #e0fbfc; /* Light blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 18px;
+}
+
+/* Editor section */
+#editor {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.editor-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#editor-area {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.editor-tools button {
+    background-color: #005f73; /* Deep teal */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.editor-tools button:hover {
+    background-color: #003e44; /* Darker teal */
+}
+
+/* About section */
+#about {
+    padding: 50px 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f73; /* Deep teal */
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Header styles with Gradient */
+header {
+    background: linear-gradient(135deg, #006f6f, #009a9a); /* Gradient from deep teal to lighter teal */
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ffffff; /* White for better contrast */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff; /* White for links */
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd166; /* Soft yellow on hover */
+}
+
+/* Additional Hover Effects */
+.nav-links a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Hero section */
+#hero {
+    background-color: #ffd166; /* Soft yellow */
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+#hero h1 {
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent; /* Make text transparent for gradient effect */
+    background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Gradient color from pinkish red to yellow */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    background-clip: text;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 3px; /* Spacing between letters */
+    animation: fadeIn 1.5s ease-out;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #005f73; /* Deep teal */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #003e44; /* Darker teal */
+}
+
+/* Animation for Fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero section */
+#hero {
+    background-color: #ffd166; /* Soft yellow */
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+#hero h1 {
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff; /* White text color */
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Increased letter spacing */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4); /* Simple text shadow */
+    animation: fadeIn 1.5s ease-out;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #005f73; /* Deep teal */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #003e44; /* Darker teal */
+}
+
+/* Animation for Fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Hero section */
+#hero {
+    background-color: #ffd166; /* Soft yellow */
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+#hero h1 {
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff; /* White text color */
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Increased letter spacing */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4); /* Simple text shadow */
+    animation: fadeIn 1.5s ease-out;
+}
+
+#hero p {
+    font-family: 'Roboto', sans-serif; /* Clean sans-serif font for the subtitle */
+    font-size: 24px; /* Medium size for subtitle */
+    color: #ffffff; /* White text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for the subtitle */
+    margin-top: 20px;
+    letter-spacing: 2px; /* Slight letter spacing */
+    animation: fadeIn 2s ease-out; /* Fade-in animation */
+}
+
+.cta-button {
+    background-color: #005f73; /* Deep teal */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #003e44; /* Darker teal */
+}
+
+/* Animation for Fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero section Button - Start Writing */
+.cta-button {
+    background: linear-gradient(45deg, #ff6f61, #ffd166); /* Gradient from pinkish red to yellow */
+    color: white; /* White text for contrast */
+    padding: 15px 30px; /* Spacious padding */
+    font-size: 20px; /* Slightly larger text */
+    font-weight: bold; /* Make text stand out */
+    text-decoration: none;
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    display: inline-block; /* Make button behave like a block */
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #ffd166, #ff6f61); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    color: #333; /* Change text color to dark for contrast */
+}
+
+.cta-button:focus {
+    outline: none; /* Remove the default outline on focus */
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.6); /* Glow effect when focused */
+}
+
+/* Editor Section */
+#editor {
+    background-color: #f4f4f9; /* Light gray background for the editor */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Editor Textarea */
+#editor-area {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    resize: vertical; /* Allow vertical resizing */
+    outline: none; /* Remove default focus outline */
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px; /* Space between text area and toolbar */
+}
+
+/* Textarea Focus Effect */
+#editor-area:focus {
+    border-color: #ff6f61; /* Highlight border color */
+    box-shadow: 0 0 8px rgba(255, 102, 97, 0.6); /* Glow effect */
+}
+
+/* Editor Tools */
+.editor-tools {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Button Styles for Editor */
+.editor-tools button {
+    background-color: #005f73; /* Deep teal */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.editor-tools button:hover {
+    background-color: #003e44; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.editor-tools button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.6); /* Glow effect on focus */
+}
+
+/* Editor Tools Buttons */
+.editor-tools button {
+    background-color: #fff; /* White background for the buttons */
+    color: #333; /* Dark text color */
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif; /* Font for buttons */
+}
+
+/* Hover effect for editor buttons */
+.editor-tools button:hover {
+    background-color: #ffd166; /* Change background to a soft yellow */
+    border-color: #ff6f61; /* Highlight border color */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Active state for editor buttons */
+.editor-tools button.active {
+    background-color: #ff6f61; /* Red background for active state */
+    color: white; /* White text when active */
+    border-color: #ff6f61; /* Match border color to background */
+}
+
+/* Focus effect for editor buttons */
+.editor-tools button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.6); /* Glow effect on focus */
+}
+
+/* Optional: Adding icons for Bold, Italic, etc. */
+.editor-tools button#bold:before {
+    content: 'B'; /* Bold icon */
+    font-weight: bold; /* Make the 'B' bold */
+}
+
+.editor-tools button#italic:before {
+    content: 'I'; /* Italic icon */
+    font-style: italic; /* Make the 'I' italic */
+}
+
+.editor-tools button#underline:before {
+    content: 'U'; /* Underline icon */
+    text-decoration: underline; /* Underline the 'U' */
+}
+
+.editor-tools button#h1:before {
+    content: 'H1'; /* Heading icon */
+    font-weight: bold;
+}
+
+/* Add more specific styles for other buttons as needed */
+/* Editor Tools Buttons */
+.editor-tools button {
+    background-color: #fff; /* White background for the buttons */
+    color: #333; /* Dark text color */
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif; /* Font for buttons */
+}
+
+/* Hover effect for editor buttons */
+.editor-tools button:hover {
+    transform: scale(1.1); /* Slight scaling on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Active state for editor buttons */
+.editor-tools button.active {
+    color: white;
+    border-color: #ffffff; /* White border when active */
+}
+
+/* Bold Button - Pink */
+.editor-tools button#bold {
+    background-color: #ff5c8d; /* Pink */
+}
+
+.editor-tools button#bold:hover {
+    background-color: #ff4081; /* Darker pink */
+}
+
+.editor-tools button#bold.active {
+    background-color: #d50057; /* Deep pink when active */
+}
+
+/* Italic Button - Light Blue */
+.editor-tools button#italic {
+    background-color: #4fc3f7; /* Light Blue */
+}
+
+.editor-tools button#italic:hover {
+    background-color: #29b6f6; /* Darker blue */
+}
+
+.editor-tools button#italic.active {
+    background-color: #0288d1; /* Deep blue when active */
+}
+
+/* Underline Button - Yellow */
+.editor-tools button#underline {
+    background-color: #ffeb3b; /* Yellow */
+}
+
+.editor-tools button#underline:hover {
+    background-color: #fbc02d; /* Darker yellow */
+}
+
+/* Editor Tools Buttons */
+.editor-tools button {
+    background-color: #f1f1f1; /* Light gray background for the buttons */
+    color: #333; /* Dark text color */
+    padding: 12px 20px;
+    font-size: 18px;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif; /* Font for buttons */
+}
+
+/* Hover effect for editor buttons */
+.editor-tools button:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Active state for editor buttons */
+.editor-tools button.active {
+    background-color: #ddd; /* Slightly darker gray when active */
+    color: #555; /* Darker text color when active */
+    border-color: #bbb; /* Slightly darker border when active */
+}
+
+/* Bold Button - Light Pink */
+.editor-tools button#bold {
+    background-color: #f8bbd0; /* Light pink */
+}
+
+.editor-tools button#bold:hover {
+    background-color: #f48fb1; /* Slightly darker pink on hover */
+}
+
+.editor-tools button#bold.active {
+    background-color: #f06292; /* Softer pink when active */
+}
+
+/* Italic Button - Light Blue */
+.editor-tools button#italic {
+    background-color: #b3e5fc; /* Light blue */
+}
+
+.editor-tools button#italic:hover {
+    background-color: #81d4fa; /* Slightly darker blue on hover */
+}
+
+.editor-tools button#italic.active {
+    background-color: #4fc3f7; /* Softer blue when active */
+}
+
+/* Underline Button - Light Yellow */
+.editor-tools button#underline {
+    background-color: #fff9c4; /* Light yellow */
+}
+
+.editor-tools button#underline:hover {
+    background-color: #fff59d; /* Slightly darker yellow on hover */
+}
+
+.editor-tools button#underline.active {
+    background-color: #fdd835; /* Softer yellow when active */
+}
+
+/* Heading Button - Light Green */
+.editor-tools button#h1 {
+    background-color: #c8e6c9; /* Light green */
+}
+
+.editor-tools button#h1:hover {
+    background-color: #a5d6a7; /* Slightly darker green on hover */
+}
+
+.editor-tools button#h1.active {
+    background-color: #81c784; /* Softer green when active */
+}
+
+/* Focus effect for all buttons */
+.editor-tools button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.4); /* Soft glow effect on focus */
+}
+
+/* Optional: Adding icons for Bold, Italic, etc. */
+.editor-tools button#bold:before {
+    content: 'B'; /* Bold icon */
+    font-weight: bold; /* Make the 'B' bold */
+}
+
+.editor-tools button#italic:before {
+    content: 'I'; /* Italic icon */
+    font-style: italic; /* Make the 'I' italic */
+}
+
+.editor-tools button#underline:before {
+    content: 'U'; /* Underline icon */
+    text-decoration: underline; /* Underline the 'U' */
+}
+
+.editor-tools button#h1:before {
+    content: 'H1'; /* Heading icon */
+    font-weight: bold;
+}
