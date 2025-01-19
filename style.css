@@ -903,3 +903,23 @@ nav {
     content: 'H1'; /* Heading icon */
     font-weight: bold;
 }
+
+/* Base styles (for desktop or large screens) */
+body {
+    font-size: 16px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+
